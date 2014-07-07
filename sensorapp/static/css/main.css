@@ -1,0 +1,376 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.comment-btn-color {
+  color: #333;
+  background-color: #bdbdbd;
+  border-color: #adadad;
+}
+.comment-btn-color:hover,
+.comment-btn-color:focus,
+.comment-btn-color:active,
+.comment-btn-color.active{
+  color: #333;
+  background-color: #aaa;
+  border-color: #9d9d9d;
+}
+.comment-btn-color:active,
+.comment-btn-color.active{
+  background-image: none;
+}
+
+
+.answer-btn-color-0 {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.answer-btn-color-0:hover,
+.answer-btn-color-0:focus,
+.answer-btn-color-0:active,
+.answer-btn-color-0.active{
+  color: #fff;
+  background-color: #47a447;
+  border-color: #398439;
+}
+.answer-btn-color-0:active,
+.answer-btn-color-0.active{
+  background-image: none;
+}
+
+
+.answer-btn-color-1 {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.answer-btn-color-1:hover,
+.answer-btn-color-1:focus,
+.answer-btn-color-1:active,
+.answer-btn-color-1.active{
+  color: #333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+.answer-btn-color-1:active,
+.answer-btn-color-1.active{
+  background-image: none;
+}
+
+.answer-btn-color-2 {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.answer-btn-color-2:hover,
+.answer-btn-color-2:focus,
+.answer-btn-color-2:active,
+.active{
+  color: #fff;
+  background-color: #d2322d;
+  border-color: #ac2925;
+}
+.answer-btn-color-2:active,
+.answer-btn-color-2.active{
+  background-image: none;
+}
+
+
+.answer-btn-color-3 {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.answer-btn-color-3:hover,
+.answer-btn-color-3:focus,
+.answer-btn-color-3:active,
+.answer-btn-color-3.active{
+  color: #fff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+.answer-btn-color-3:active,
+.answer-btn-color-3.active{
+  background-image: none;
+}
+
+
+.summary-title{
+  color: #ffffff;
+  background-color: #666666;
+  font-size: .9em;
+  padding: .1em;
+  text-align: center;
+}
+.item h4 {
+  font-weight: bold;
+}
+#current-status-block{
+  padding: .2em;
+  border: 1px solid #dedede;
+}
+#current-status{
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2em;
+}
+#location_label {
+  cursor:pointer;
+}
+#location_label:hover{
+  border-bottom: 1px solid #119E84;
+}
+#stat_description {
+  overflow: hidden;
+  width: 100%;
+}
+#stat_location {
+  float: right;
+  text-align: right;
+  margin-top: .5em;
+  font-size: .8em;
+  color: #119E84;
+}
+#stat_title {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: .2em;
+  border-bottom: 1px dotted #dedede;
+}
+#stat_question {
+  width: 100%;
+  float: left;
+  font-size: 1.1em;
+  padding: .2em;
+}
+.report_link {
+  float: right;
+  text-align: right;
+  margin: 5px 3px;
+  padding: 2px;
+}
+.status_report_link{
+  text-align: right;
+  margin-top: -7px;
+  padding: 0 2px;
+}
+
+#summary_link {
+  float: right;
+  text-align: right;
+  margin: 5px 3px;
+  padding: 2px;
+}
+.stat_count {
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.stat_answer {
+  font-size: 1em;
+  text-align: center;
+}
+
+.item {
+    overflow: hidden;
+    list-style: none;
+    padding: 0.5em;
+    margin: 1.4em 0;
+    
+    background-color: #ffffff;
+  	border: 1px solid #dedede;
+
+    -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; border-top-left-radius: 5px;
+  	-moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; border-top-right-radius: 5px;
+  	-moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px;
+  	-moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; 
+}
+.gray{
+  background-color: #ededed !important;   
+}
+.ans {
+  padding: 2px;
+}
+.comment{
+  padding: 2px; 
+}
+
+#myComment {
+  width: 99%;
+}
+
+#reporter {
+  width: 99%;
+}
+#question-area {
+  margin: 2px;
+  border: 1px dashed #c1c1c1;
+  padding: 7px;
+  font-size: 1.5em;
+}
+#question_location {
+  float: right;
+  text-align: right;
+  margin-top: 1.3em;
+  font-size: .6em;
+  color: #119E84;
+}
+@media (min-width: 768px) {
+  #question-block{
+    margin: 10px auto;
+    width: 700px;
+  }
+  #stat {
+    overflow: hidden;
+    margin: 10px auto;
+    width: 550px;
+    align: center;
+    border: 1px solid #d1d1d1;
+    padding: 2px;
+    -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; border-top-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px;
+  }
+
+  .block {
+    float: left;
+    border: 1px solid #dedede;
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+    width: 130px;
+  }
+
+  .mini-block{
+    font-size: .8em;
+    float: left;
+    border: 1px solid #dedede;
+    text-align: center;
+    padding: .2em;
+    margin: 0em;
+    width: 25%;
+  }
+
+  .room-status{
+    height: 175px;
+    width: 175px;
+    margin:0px auto;
+    background-image: url("/static/img/room-status-icon-350.png");
+  }
+  .room-status-empty{ background-position:0px 0px; }
+  .room-status-meeting{ background-position:175px 0px;}
+  .room-status-course{ background-position:0px 175px;}
+  .room-status-study{ background-position:175px 175px;}
+
+}
+
+@media (min-width: 555px) and (max-width: 767px) {
+  #question-block{
+    margin: 10px auto;
+    width: 700px;
+  }
+  #stat {
+    overflow: hidden;
+    margin: 10px auto;
+    width: 550px;
+    align: center;
+    border: 1px solid #d1d1d1;
+    padding: 2px;
+    -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; border-top-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px;
+  }
+
+  .block {
+    float: left;
+    border: 1px solid #dedede;
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+    width: 130px;
+  }
+  .mini-block{
+    font-size: .8em;
+    float: left;
+    border: 1px solid #dedede;
+    text-align: center;
+    padding: .2em;
+    margin: 0em;
+    width: 25%;
+  }
+  .room-status{
+    height: 175px;
+    width: 175px;
+    margin:0px auto;
+    background-image: url("/static/img/room-status-icon-350.png");
+  }
+  .room-status-empty{ background-position:0px 0px; }
+  .room-status-meeting{ background-position:0px 175px;}
+  .room-status-course{ background-position:175px 0px;}
+  .room-status-study{ background-position:175px 175px;}
+}
+@media (max-width: 554px) {
+  #question-block{
+    margin: 10px auto;
+    width: 90%;
+  }
+  #stat {
+    overflow: hidden;
+    margin: 10px auto;
+    width: 310px;
+    align: center;
+    border: 1px solid #d1d1d1;
+    padding: 2px;
+    -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; border-top-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px;
+  }
+  .block {
+    float: left;
+    border: 1px solid #dedede;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    width: 72px;
+  }
+  .mini-block{
+    font-size: .8em;
+    float: left;
+    border: 1px solid #dedede;
+    text-align: center;
+    padding: .2em;
+    margin: 0em;
+    width: 25%;
+  }
+  .room-status{
+    height: 175px;
+    width: 175px;
+    margin:0px auto;
+    background-image: url("/static/img/room-status-icon-350.png");
+  }
+  .room-status-empty{ background-position:0px 0px; }
+  .room-status-meeting{ background-position:0px 175px;}
+  .room-status-course{ background-position:175px 0px;}
+  .room-status-study{ background-position:175px 175px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
