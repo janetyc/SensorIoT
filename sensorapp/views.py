@@ -117,7 +117,7 @@ def add_sensor_data():
     if sensing_time == "":
         sensing_time_datetime = datetime.utcnow()
     else:
-        sensing_time_datetime = datetime.strptime(sensing_time, '%Y-%m-%d_%H:%M:%S')
+        sensing_time_datetime = datetime.strptime(sensing_time, '%Y-%m-%d_%H:%M:%S:%f')
 
     input = {
         'value': value,
@@ -127,7 +127,8 @@ def add_sensor_data():
     }
 
     sensor_data_id = DBQuery().add_sensor_data(input)
-    return jsonify(success=1, data=sensor_data_id)
+
+    return jsonify(success=1, data=sensor_data_id, time=sensing_time_datetime)
 
 @views.route('/add_actuator_data', methods=('GET', 'POST'))
 def add_actuator_data():
@@ -139,7 +140,7 @@ def add_actuator_data():
     if acting_time == "":
         acting_time_datetime = datetime.utcnow()
     else:
-        acting_time_datetime = datetime.strptime(acting_time, '%Y-%m-%d_%H:%M:%S')
+        acting_time_datetime = datetime.strptime(acting_time, '%Y-%m-%d_%H:%M:%S:%f')
 
     input = {
         'value': value,
