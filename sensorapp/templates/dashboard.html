@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+  <div class="col-lg-3">
+		<h2>Device</h2>
+    {% for d in data['devices'] %}
+    <ul class="item">
+      <li>id: {{d._id}}</li>
+      <li>name: {{d.name}}</li>
+      <li>type: {{d.type}}</li>
+      <li>digit_pin num: {{d.digit_pin_num}}</li>
+      <li>analog_pin num: {{d.analog_pin_num}}</li>
+     	<li>location: {{d.location}}</li>
+		  <li>created by: {{d.created_user}}</li>
+    	<li>created time: {{d.created_time}}</li>
+	  </ul>
+    {% endfor %}
+	</div>
+  <div class="col-lg-3">
+    <h2>Sensor</h2>
+    {% for s in data['sensors'] %}
+    <ul class="item">
+      <li>id: {{s._id}}</li>
+      <li>name: {{s.name}}</li>
+		</ul>
+    {% endfor %}      
+  </div>
+  <div class="col-lg-3">
+	  <h2>Actuator</h2>  
+   	{% for a in data['actuators'] %}
+   	<ul class="item">
+   		<li>id: {{a._id}}</li>
+   		<li>name: {{a.name}}</li>
+      <li>location: {{a.location}}</li>
+   		<li>created time: {{a.created_time}}</li>
+		</ul>
+    {% endfor %}
+	</div>
+  <div class="col-lg-3">
+    <h2>Data</h2>
+    <h5>sensor data</h5>
+    {% for s_data in data['sensor_data'] %}
+    <ul class="item">
+      <li>id: {{s_data._id}}</li>
+      <li>value: {{s_data.value}}</li>
+      <li>time: {{s_data.sensing_time}}</li>
+      <li>inserted time: {{s_data.created_time}}</li>
+    </ul>
+    {% endfor %}
+    <hr/>
+    <h5>actuator data</h5>
+    {% for a_data in data['actuator_data'] %}
+    <ul class="item">
+      <li>id: {{a_data._id}}</li>
+      <li>value: {{a_data.value}}</li>
+      <li>time: {{a_data.acting_time}}</li>
+      <li>inserted time: {{a_data.created_time}}</li>
+    </ul>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

@@ -21,6 +21,8 @@ else:
     app.config.from_object('config.Config')
 
 
+db = MongoKit(app)
+
 from sensorapp.views import views #should put after app
 app.register_blueprint(views)
 

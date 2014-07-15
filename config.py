@@ -46,7 +46,7 @@ class TestingConfig(Config):
 class DebugConfig(Config):
     DEBUG = True
     TESTING = False
-    MONGO_URI = os.getenv("MONGO_URL", "mongodb://:@localhost:27017/crowdBt")
+    MONGO_URI = os.getenv("MONGO_URL", "mongodb://:@localhost:27017/sensorDB")
     url = urlparse.urlparse(MONGO_URI)
     DB_NAME = url.path[1:]
     MONGODB_HOST = url.hostname
